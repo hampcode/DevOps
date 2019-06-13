@@ -1,6 +1,5 @@
 # Script que crea la tabla Categoria
-# Autor	: Henry Wong
-# Correo: hwongu@gmail.com
+
 
 USE `visorbd`;
 CREATE TABLE `categoria` (

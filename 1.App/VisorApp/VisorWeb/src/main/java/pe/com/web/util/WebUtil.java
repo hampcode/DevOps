@@ -14,10 +14,7 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
 
-/**
- * @author Henry Joe Wong Urquiza
- * @email hwongu@gmail.com
- */
+
 public class WebUtil {
 
     private WebUtil() {

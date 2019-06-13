@@ -65,8 +65,8 @@
 					<encoding>ISO-8859-1</encoding>
 					<cleanOnValidationError>true</cleanOnValidationError>
 					<placeholders>
-						<email_type.primary>hwongu@pmclatam.com.pe</email_type.primary>
-						<email_type.work>hwong@pmclatam.com.pe</email_type.work>
+						<email_type.primary>hmendo81@gmail.com</email_type.primary>
+						<email_type.work>hmendo81@gmail.com</email_type.work>
 					</placeholders>
 				</configuration>
 				<executions>

@@ -6,8 +6,7 @@ import java.util.Objects;
 /**
  * Flujo 01
  * Clase mapeada de la tabla Producto
- * @author Henry Joe Wong Urquiza
- * @email hwongu@gmail.com
+ 
  */
 public class Producto implements Serializable {
 

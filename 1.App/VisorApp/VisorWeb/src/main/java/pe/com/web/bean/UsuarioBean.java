@@ -7,10 +7,7 @@ package pe.com.web.bean;
 
 import java.io.Serializable;
 
-/**
- * @author Henry Joe Wong Urquiza
- * @email hwongu@gmail.com
- */
+
 public class UsuarioBean implements Serializable{
     
     private static final long serialVersionUID = 1L;

@@ -16,11 +16,7 @@ import cucumber.api.java.en.When;
 import pe.com.core.business.CategoriaBusiness;
 import pe.com.core.entity.Categoria;
 
-/**
- * 
- * @author 	Henry Joe Wong Urquiza
- * @email 	hwongu@gmail.com
- */
+
 public class CategoriaIntegrationTest {
 	private final CategoriaBusiness categoriaBusiness = new CategoriaBusiness();
 	private static Categoria categoria = new Categoria();

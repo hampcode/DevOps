@@ -1,6 +1,5 @@
 # Script que crea la tabla Producto
-# Autor	: Henry Wong
-# Correo: hwongu@gmail.com
+
 
 USE `visorbd`;
 CREATE TABLE `producto` (

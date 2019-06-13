@@ -8,10 +8,7 @@ import org.apache.log4j.Logger;
 import pe.com.web.bean.UsuarioBean;
 import pe.com.web.util.WebUtil;
 
-/**
- * @author Henry Joe Wong Urquiza
- * @email hwongu@gmail.com
- */
+
 @ManagedBean
 @ViewScoped
 public class IniciarSesionController implements Serializable {

@@ -4,8 +4,7 @@ import java.util.ResourceBundle;
 
 /**
  * Clase que contiene metodos utilirios para capa del Core
- * @author 	Henry Joe Wong Urquiza
- * @email 	hwongu@gmail.com
+ 
  */
 public final class UtilCore {
 

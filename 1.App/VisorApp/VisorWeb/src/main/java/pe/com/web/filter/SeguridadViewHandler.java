@@ -10,10 +10,7 @@ import javax.servlet.http.HttpSession;
 import org.apache.log4j.Logger;
 import pe.com.web.util.WebUtil;
 
-/**
- * @author Henry Joe Wong Urquiza
- * @email hwongu@gmail.com
- */
+
 @ManagedBean
 @SessionScoped
 public class SeguridadViewHandler implements Serializable {

@@ -7,8 +7,7 @@ import pe.com.core.entity.Categoria;
 
 /**
  * Clase que tiene los metodos de Negocio para Categoria
- * @author 	Henry Joe Wong Urquiza
- * @email 	hwongu@gmail.com
+ 
  */
 public class CategoriaBusiness {
 
