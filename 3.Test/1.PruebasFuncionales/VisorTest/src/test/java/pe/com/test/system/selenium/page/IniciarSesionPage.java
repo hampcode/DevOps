@@ -12,8 +12,8 @@ public class IniciarSesionPage {
 	private By botonIniciarSesion = By.id("btnIniciarSesion");
 	private WebDriver webDriver = null;
 	
-	public IniciarSesionPage(String navegador, boolean remoto){
-		this.webDriver = VisorDriver.inicializarDriver(navegador, remoto);
+	public IniciarSesionPage(String navegador){
+		this.webDriver = VisorDriver.inicializarDriver(navegador);
 	}
 	
 	public void ingresarPaginaIniciarSesion(String urlInicial) throws Exception{
