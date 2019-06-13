@@ -23,11 +23,7 @@ import pe.com.core.dao.CategoriaDao;
 import pe.com.core.entity.Categoria;
 
 
-/**
- * 
- * @author 	Henry Joe Wong Urquiza
- * @email 	hwongu@gmail.com
- */
+
 @RunWith(MockitoJUnitRunner.class)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class CategoriaTest {

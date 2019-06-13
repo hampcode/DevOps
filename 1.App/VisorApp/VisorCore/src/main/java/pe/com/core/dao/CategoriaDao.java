@@ -9,8 +9,7 @@ import pe.com.core.entity.Categoria;
 /**
  * Clase que tiene los metodos de Acceso a Datos para la tabla Categoria
  * Comentario agregado
- * @author Henry Joe Wong Urquiza
- * @email hwongu@gmail.com
+ 
  */
 public class CategoriaDao extends Conexion<Categoria> {
 

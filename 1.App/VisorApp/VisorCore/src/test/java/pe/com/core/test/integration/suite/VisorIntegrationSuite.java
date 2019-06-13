@@ -6,11 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 //http://www.baeldung.com/mockito-void-methods
 
-/**
- * 
- * @author 	Henry Joe Wong Urquiza
- * @email 	hwongu@gmail.com
- */
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
 	features = "src/test/resources",

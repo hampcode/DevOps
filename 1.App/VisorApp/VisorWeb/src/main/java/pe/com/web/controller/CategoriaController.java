@@ -12,10 +12,7 @@ import pe.com.core.dao.CategoriaDao;
 import pe.com.core.entity.Categoria;
 import pe.com.web.util.WebUtil;
 
-/**
- * @author Henry Joe Wong Urquiza
- * @email hwongu@gmail.com
- */
+
 @ManagedBean
 @SessionScoped
 public class CategoriaController implements Serializable {

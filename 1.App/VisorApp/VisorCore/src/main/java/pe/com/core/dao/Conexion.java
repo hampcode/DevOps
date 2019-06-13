@@ -10,8 +10,7 @@ import java.util.List;
 
 /**
  * Clase utilizada para contener todo los metodos necesarios para conexion con una base de datos
- * @author 	Henry Joe Wong Urquiza
- * @email 	hwongu@gmail.com
+ 
  */
 public abstract class Conexion<E> {
     

@@ -6,8 +6,7 @@ import java.util.Objects;
 
 /**
  * Clase mapeada de la tabla Categoria
- * @author Henry Joe Wong Urquiza
- * @email hwongu@gmail.com
+ 
  */
 public class Categoria implements Serializable {
 
