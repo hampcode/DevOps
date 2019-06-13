@@ -1,0 +1,140 @@
+/******************************
+/*----FORMULARIOS*/
+/*******************************/
+
+
+/*----Login*/
+/*******************************/
+.form-login{
+	border: 1px solid #d9d9d9;
+	border-top: 3px solid #d9d9d9;
+}
+.form-login .form-login-header{
+	padding:20px;
+	padding-bottom:0px;
+}
+.form-login .form-login-body{
+	padding:20px;
+}
+.form-login .form-login-footer{	
+	border-top:1px solid #e0e0e0;
+	padding:20px;
+}
+/*----form-input-search*/
+/*******************************/
+.form-input-search{
+	border:1px solid #d4d4d4;
+	position:relative;
+}
+.form-input-search:hover{
+	border-color: #a7a7a7;
+  outline: 0;
+  -webkit-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+  -moz-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+  -ms-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+  -o-box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+  box-shadow: 3px 3px 0px 0px rgba(50, 50, 50, 0.19);
+  background:#fff;
+}
+.form-input-search input[type="text"]{
+	padding:5px;
+}
+.form-input-search button{
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	right: 0px;
+}
+.form-input-search input[type="text"],
+.form-input-search button{
+	border:none;
+	background:none;
+	box-shadow:none;
+}
+/*----form-input-read*/
+/*******************************/
+.form-input-read input[disabled]{
+	background:none;
+	border:none;
+	box-shadow:none;
+	padding:0px;
+}
+/******************************
+/*----UTILITIES*/
+/*******************************/
+.text-middle th,
+.text-middle td{
+	vertical-align:middle;
+}
+/*----Spinner*/
+/*******************************/
+.ui-spinner input{
+	/*width:30px;*/
+}
+.ui-spinner input,
+.ui-spinner input:focus{
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	-moz-box-shadow:none;
+}
+
+/*----Autocomplete*/
+/*******************************/
+
+.ui-autocomplete-input {
+	
+}
+
+.ui-autocomplete-input,
+.ui-autocomplete-input:focus{
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	-moz-box-shadow:none;
+}
+
+/******************************
+/*----TABLAS*/
+/*******************************/
+.controls .control-table{
+	display: inline-block;
+	font-size: 16px;
+	color: #aaa;
+	margin-right: 10px;
+	cursor:pointer;
+	border:none;
+	background:none;
+	padding:0px;
+}
+
+/*----.hidden-edit*/
+/*******************************/
+.hidden-edit .input-group .input-group-addon{
+	display:none;
+}
+.hidden-edit input[readonly]{
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+.hidden-edit input[readonly]:focus,
+.hidden-edit input[readonly]:hover,
+.hidden-edit .input-group:hover{
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	-moz-box-shadow:none;
+}
+.hidden-edit input[type="text"],
+.hidden-edit input[type="password"]{
+	text-align:center;
+}
+
+
+
+/******************************
+/*----RESPONSIVE*/
+/*******************************/
+@media (max-width: 768px) {
+	.comp-btn-user .name{
+		display:none;
+	}
+}

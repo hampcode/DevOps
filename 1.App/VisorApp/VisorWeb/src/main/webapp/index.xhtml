@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+	 <f:loadBundle basename="messages" var="m" />
+	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<title>.:: #{m['template.titulo']} ::.</title>
+	<!--[if lt IE 9]>
+	    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<link href="Content/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="Content/css/skin.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="Scripts/modernizr/modernizr.custom.js"></script>
+	<link rel="shortcut icon" href="img/logo.ico" />
+</h:head>
+ <h:body class="skin-gym bar-white">
+	<section class="box-login">
+		<div class="wrap-login">
+			<div class="logo-solo-login">
+				<img src="Content/images/system/logo-solomon.png" />
+			</div>
+			<div class="form-login">
+			  	<h:form id="frmLogin" prependId="false">			
+			  		<div class="form-login-header">
+			  			#{m['index.titulo']} 
+			  		</div>
+			        <div class="form-login-body">
+			        	   
+				        <div class="form-group input-group">
+				          <span class="input-group-addon ico-log ico-user-login">
+				            <i class="">
+				            	<img src="Content/images/system/ico-user-login.png" />
+				            </i>
+				          </span>
+				          <p:inputText class="form-control" placeholder="#{m['index.usuario']}" id="txtUsuario" label="#{m['index.usuario']}" value="#{iniciarSesionController.usuarioBean.correo}" required="true" />
+				          		          
+				        </div>
+				    	
+				        <div class="input-group">
+				          <span class="input-group-addon ico-log ico-pass-login">
+				            <i class="">
+				            	<img src="Content/images/system/ico-user-pass.png" />
+				            </i>
+				          </span>
+				          <p:password class="form-control" placeholder="#{m['index.clave']}"  id="txtClave" value="#{iniciarSesionController.usuarioBean.clave}" label="#{m['index.clave']}" required="true" />
+				          
+				        </div>						        
+				    </div>
+			        <div class="form-login-footer">
+			        
+			          <p:commandButton class="btn-add" value="#{m['index.iniciarSesion']}"  
+			          	action="#{iniciarSesionController.iniciarSesion}" 
+			          	id="btnIniciarSesion"  />
+			          
+			        </div>				      
+					<div>
+						<p:messages id="messages" showDetail="false" autoUpdate="true"/>
+					</div>
+
+			        
+			   </h:form>
+			</div>
+		</div>		
+	</section>
+	<footer class="login">
+		<div class="row">
+			<div class="col-sm-12">
+				<p class="pull-left">Visor de Almacén © Todos los derechos reservados</p>
+				<ul class="pull-right">
+					<li class="title">Powered by Henry Wong</li>
+					
+				</ul>
+			</div>
+		</div>
+	</footer>	
+	</h:body>						
+</html>

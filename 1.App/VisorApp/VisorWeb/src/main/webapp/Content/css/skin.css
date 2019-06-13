@@ -1,0 +1,874 @@
+
+/******************************
+Theme Name: UI GYM
+Author: Diego Guadalupe, Sebastian Yabiku
+Version: 1.0
+/*******************************/
+
+/******************************
+/*----SELECT-UI*/
+/*******************************/
+.show-ui {
+	/*padding-top: 155px;*/
+}
+.select-ui{
+	/*padding: 10px 20px;
+	position: fixed;
+	z-index: 99;
+	background: #000;
+	right: 0px;
+	bottom: 52px;
+	top: 52px;
+	overflow: hidden;
+	overflow: auto;*/
+}
+.select-ui .inner{
+	padding: 86px 20px;
+}
+.select-ui ul{
+	padding:0px;
+	margin:0px;
+}
+.select-ui li{
+	/*list-style:none;
+	cursor:pointer;
+	padding-bottom:6px;
+	position:relative;
+	margin-bottom:10px;*/
+}
+
+.select-ui .title{
+	position: relative;
+	/* top: 5px; */
+	font-weight: bold;
+	cursor: default;
+	border-bottom: 1px solid #BBB;
+	/* padding-right: 20px; */
+	color: #fff;
+	/* width: 90px; */
+	padding: 0px;
+	display: inline-block;
+	font-size: 20px;
+	margin-bottom: 20px;
+	width:100%;
+}
+.select-ui .title:hover:before{
+	display:none;
+}
+.list-color .color:before{
+	bottom:-6px;
+}
+.select-ui img{
+	-o-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+	tranform:scale(.8);
+	-webkit-filter: grayscale(100%);
+	  -moz-filter: grayscale(100%);
+	  -ms-filter: grayscale(100%);
+	  -o-filter: grayscale(100%);
+	  filter: grayscale(100%);
+	  filter: url(grayscale.svg); /* Firefox 4+ */
+	  filter: gray; /* IE 6-9 */
+}
+.select-ui img:hover,
+.select-ui li.active img{
+	-webkit-filter: grayscale(0%);
+			  -moz-filter: grayscale(0%);
+			  -ms-filter: grayscale(0%);
+			  -o-filter: grayscale(0%);
+			  filter: grayscale(0%);
+			  filter: grayscale(0%);
+			  filter: grayscale(0%);
+}
+.select-ui .list-color{
+	/*margin-top:20px;*/
+}
+.select-ui .list-color .color{
+	/*-o-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+	width: 27px;
+	height: 27px;
+	border: 1px solid #ccc;
+	text-indent: -9999px;
+	float: left;
+	margin: 0 10px 0 0;
+	background:#fff;*/
+}
+.select-ui .list-color .color.bar-dark{
+	/*background:#000;*/
+}
+.select-ui .close-ui{
+	position: absolute;
+	background: #7C7C7C;
+	color:#000;
+	-o-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	right: 20px;
+	top: 20px;
+	font-weight: normal;
+	cursor: pointer;
+	border-bottom: 3px solid #7C7C7C;
+}
+.select-ui .close-ui:hover{
+	color: #fff;
+	background: #000;
+}
+/******************************
+/*----DATEPICKER*/
+/*******************************/
+.ui-datepicker .ui-datepicker-header{
+	padding:4px 0 2px!important;
+	border:1px solid #dedede!important;
+}
+.ui-datepicker-calendar{
+	border:1px solid #dedede;	
+	margin-top:6px!important;
+}
+.ui-datepicker .ui-datepicker-title{
+	border:1px solid #bdbdbd;
+	margin-top:-2px!important;
+}
+.ui-datepicker td .ui-state-default{
+	-webkit-box-shadow:none!important;
+	box-shadow:none!important;
+	-moz-box-shadow:none!important;
+}
+.ui-datepicker{
+	border:none!important;
+}
+.ui-datepicker-header{
+	background:none!important;
+}
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev{
+	background:#d2d2d2;
+	color:#fff;
+	font: normal normal normal 14px/1 FontAwesome;
+	width:25px;
+	height:25px;
+	color:#fff;
+	text-align:center;
+}
+.ui-datepicker .ui-datepicker-next:before{
+	content: "\f105";
+	font-size:24px;
+}
+.ui-datepicker .ui-datepicker-prev:before{
+	content: "\f104";
+	font-size:24px;
+}
+.ui-datepicker .ui-datepicker-prev .ui-icon,
+.ui-datepicker .ui-datepicker-next .ui-icon{	
+	background:none;	
+}
+
+/******************************
+/*----bar-white*/
+body.bar-white {
+	background: #f5f6fa !important;
+	/*background: url('../images/system/bg_login.png') top right no-repeat #fff;*/
+}
+/*******************************/
+
+/******************************
+/*----bar-dark*/
+/*******************************/
+.bar-dark .header{
+	background:#3e3d3d;
+}
+.bar-dark .header h1{
+	color:#fff;
+}
+.bar-dark .comp-btn-notification .btn{
+	background:#4b4b4b;
+	border-left:1px solid #828181;
+	border-right:1px solid #828181;
+}
+.bar-dark .comp-btn-user .btn{
+	background:#4b4b4b;
+	color:#ededed;
+}
+.bar-dark .comp-btn-notification .fa-bell-o,
+.bar-dark .comp-btn-notification:hover .fa-bell-o,
+.bar-dark .comp-btn-notification.open .fa-bell-o{
+	color:#d7d7d7;
+}
+.bar-dark .comp-btn-user.open .caret, 
+.bar-dark .comp-btn-user .btn:hover .caret{
+	border-top:4px solid #c8c8c8;
+}
+.bar-dark.skin-gym .logo img{
+	background:url('../images/system/empresas.png') no-repeat -1px -155px;
+	width:127px;
+	height:28px;
+}
+.bar-dark .header{
+	border-bottom:none;
+}
+.logo.dark img{
+	background:url('../images/system/empresas.png') no-repeat -1px -31px!important;
+}
+/******************************
+/*----GYM*/
+/*******************************/
+.skin-gym .logo img{
+	background:url('../images/system/empresas.png') no-repeat 0px -31px;
+	width:170px;
+	height:28px;
+}
+.skin-gym .main-nav .menu-dropdown.active:before,
+.skin-gym .comp-btn-notification.btn-group.open .btn:before, 
+.skin-gym .comp-btn-notification .btn:hover:before, 
+.skin-gym .comp-btn-user.btn-group.open .btn:before, 
+.skin-gym .comp-btn-user .btn:hover:before,
+.skin-gym .nav-tabs > li.active > a:before,
+.skin-gym .nav-tabs > li:hover.active > a:before,
+.skin-gym .ui-datepicker td .ui-state-hover{
+	background: #0072C1;
+}
+.skin-gym .modal-content,
+.skin-gym .form-login{
+	border-top: none;
+}
+.skin-gym .ui-datepicker td .ui-state-active{
+	background:none;
+	outline:1px solid #ff9002;
+	color:#ff9002;
+}
+
+.skin-gym .search-box .btn-default{
+	background: #ffffff;
+	color:#ea8e17;
+	border-top:1px solid #CCC;
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+}
+
+.skin-gym .search-box .btn-default:hover{
+	background: transparent;
+}
+
+.skin-gym .search-box .btn-default.active,
+.skin-gym .open .search-box .btn-default{
+	background: transparent;
+}
+
+.skin-gym .btn-default{
+	color: #cc0641;
+	border:1px solid #d3d3d3;
+	border-radius: 2px;
+	background: #fefefe; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fefefe 0%, #efeded 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#efeded)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#efeded 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fefefe 0%,#efeded 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fefefe 0%,#efeded 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fefefe 0%,#efeded 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#efeded',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+.skin-gym .btn-default:hover{
+	color: #cc0641;
+	border:1px solid #CCC;
+	background: #efeded; /* Old browsers */
+	background: -moz-linear-gradient(top,  #efeded 0%, #fefefe 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efeded), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #efeded 0%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #efeded 0%,#fefefe 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #efeded 0%,#fefefe 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #efeded 0%,#fefefe 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efeded', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+.skin-gym .btn-default.active,
+.skin-gym .open .btn-default{
+	background: red;
+}
+
+
+.skin-gym .btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: inherit;
+  box-shadow: inherit;
+}
+
+.skin-gym .btn-primary:before {
+	content: '';
+	height: 1px;
+	background: #2e8df9;
+	position: absolute;
+	top: 0px;
+	left: 1px;
+	right: 1px;
+}
+
+.skin-gym .btn-primary{
+	position: relative;
+	border-radius: 2px;
+	background: #1c74cd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1c74cd 0%, #0061a8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1c74cd), color-stop(100%,#0061a8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1c74cd 0%,#0061a8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1c74cd 0%,#0061a8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1c74cd 0%,#0061a8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1c74cd 0%,#0061a8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c74cd', endColorstr='#0061a8',GradientType=0 ); /* IE6-9 */
+	color:#FFF;
+	border:1px solid #014691;
+}
+.skin-gym .btn-primary:hover,
+.skin-gym .open .btn-primary{
+	background: #0061a8; /* Old browsers */
+background: -moz-linear-gradient(top,  #0061a8 0%, #1c74cd 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0061a8), color-stop(100%,#1c74cd)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #0061a8 0%,#1c74cd 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #0061a8 0%,#1c74cd 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #0061a8 0%,#1c74cd 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #0061a8 0%,#1c74cd 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0061a8', endColorstr='#1c74cd',GradientType=0 ); /* IE6-9 */
+
+}
+.skin-gym .btn-primary:active,
+.skin-gym .btn-primary.active{
+	background: #1c74cd; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1c74cd 0%, #0061a8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1c74cd), color-stop(100%,#0061a8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1c74cd 0%,#0061a8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1c74cd 0%,#0061a8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1c74cd 0%,#0061a8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1c74cd 0%,#0061a8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c74cd', endColorstr='#0061a8',GradientType=0 ); /* IE6-9 */
+}
+
+.skin-gym .btn-primary:active{
+	color:#eceded;
+}
+.skin-gym .comp-btn-notification .title,
+.skin-gym .wrap-pagination .pagination-ui li:hover a,
+.skin-gym .wrap-pagination .pagination-ui li.active a,
+.skin-gym .wrap-pagination .arrow:hover,
+.skin-gym .wrap-pagination .arrow.active{
+	color:#0566ae;
+	font-weight: normal;
+}
+
+.skin-gym .comp-btn-notification .title span {
+	color: #c90340;
+}
+
+
+.skin-gym li.token-input-selected-token-facebook {
+	background-color: #FFEAD0;
+	border: 1px solid #EFB76F;
+}
+
+.skin-gym li.token-input-selected-token-facebook p {
+	color: #EA8128;
+}
+
+.skin-gym li.token-input-selected-token-facebook .token-input-delete-token-facebook {
+	color: #F28B08;
+}
+
+.skin-gym .jstree-default .jstree-clicked {
+	background: #FFEAD0;
+	border-radius: 2px;
+	box-shadow: inset 0 0 1px #EFB76F;
+	color: #EA8128;
+}
+
+.skin-gym .totalattach {
+	background: #ff9002;
+}
+
+/******************************
+/*----SERVICIOS*/
+/*******************************/
+.skin-servicios .logo img{
+	background:url('../images/system/empresas.png') no-repeat -1px -1px;
+	width:82px;
+	height:28px;
+}
+.skin-servicios .main-nav .menu-dropdown.active:before,
+.skin-servicios .comp-btn-notification.btn-group.open .btn:before, 
+.skin-servicios .comp-btn-notification .btn:hover:before, 
+.skin-servicios .comp-btn-user.btn-group.open .btn:before, 
+.skin-servicios .comp-btn-user .btn:hover:before,
+.skin-servicios .nav-tabs > li.active > a:before,
+.skin-servicios .nav-tabs > li:hover.active > a:before,
+.skin-servicios .ui-datepicker td .ui-state-hover{
+	background:#0064b4;
+}
+.skin-servicios .modal-content,
+.skin-servicios .form-login{
+	border-top:3px solid #0064b4;
+}
+.skin-servicios .ui-datepicker td .ui-state-active{
+	background:none;
+	outline:1px solid #0064b4;
+	color:#0064b4;
+}
+.skin-servicios .btn-default{
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e7e7e7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7e7e7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e7e7e7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+	color:#3763b0;
+	border:1px solid #b1b1b1;
+}
+.skin-gym .btn-default:hover,
+.skin-gym .btn-default.active,
+.skin-servicios .open .btn-default{
+	background: red;
+	/*background: #e7e7e7;
+	background: -moz-linear-gradient(top,  #e7e7e7 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e7e7e7), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%);
+	background: -o-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%);
+	background: linear-gradient(to bottom,  #e7e7e7 0%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#ffffff',GradientType=0 );*/
+}
+.skin-servicios .btn-primary{	
+	background: #4268ad; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4268ad 0%, #375a95 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4268ad), color-stop(99%,#375a95)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4268ad 0%,#375a95 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4268ad 0%,#375a95 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4268ad 0%,#375a95 99%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4268ad 0%,#375a95 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4268ad', endColorstr='#375a95',GradientType=0 ); /* IE6-9 */
+	color:#d8e6f3;
+	border:1px solid #b1b1b1;
+}
+.skin-servicios .btn-primary:hover,
+.skin-servicios .btn-primary:active,
+.skin-servicios .btn-primary.active,
+.skin-servicios .open .btn-primary{
+	background: #375a95; /* Old browsers */
+	background: -moz-linear-gradient(top,  #375a95 0%, #4268ad 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#375a95), color-stop(100%,#4268ad)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #375a95 0%,#4268ad 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #375a95 0%,#4268ad 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #375a95 0%,#4268ad 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #375a95 0%,#4268ad 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#375a95', endColorstr='#4268ad',GradientType=0 ); /* IE6-9 */
+	color:#d8e6f3;
+	border:1px solid #2e57a0;
+}
+
+.skin-servicios .comp-btn-notification .title,
+.skin-servicios .wrap-pagination .pagination-ui li:hover a,
+.skin-servicios .wrap-pagination .pagination-ui li.active a,
+.skin-servicios .wrap-pagination .arrow:hover,
+.skin-servicios .wrap-pagination .arrow.active{
+	color:#0064b4;
+}
+
+
+.skin-servicios li.token-input-selected-token-facebook {
+	background-color: #D9EDF7;
+	border: 1px solid #90B0CA;
+}
+
+.skin-servicios li.token-input-selected-token-facebook p {
+	color: #31708F;
+}
+
+.skin-servicios li.token-input-selected-token-facebook .token-input-delete-token-facebook {
+	color: #024B86;
+}
+
+.skin-servicios .jstree-default .jstree-clicked {
+	background: #D9EDF7;
+	border-radius: 2px;
+	box-shadow: inset 0 0 1px #90B0CA;
+	color: #31708F;
+}
+
+.skin-servicios .totalattach {
+	background: #3763b0;
+}
+
+/**********************************
+/*----INGENIERIA & CONSTRUCCION*/
+/*********************************/
+.skin-ingenieria .logo img{
+	background:url('../images/system/empresas.png') no-repeat -1px -63px;
+	width:82px;
+	height:28px;
+}
+.skin-ingenieria .main-nav .menu-dropdown.active:before,
+.skin-ingenieria .comp-btn-notification.btn-group.open .btn:before, 
+.skin-ingenieria .comp-btn-notification .btn:hover:before, 
+.skin-ingenieria .comp-btn-user.btn-group.open .btn:before, 
+.skin-ingenieria .comp-btn-user .btn:hover:before,
+.skin-ingenieria .nav-tabs > li.active > a:before,
+.skin-ingenieria .nav-tabs > li:hover.active > a:before,
+.skin-ingenieria .ui-datepicker td .ui-state-hover{
+	background:#ee1621;
+}
+.skin-ingenieria .modal-content,
+.skin-ingenieria .form-login{
+	border-top:3px solid #ee1621;
+}
+.skin-ingenieria .ui-datepicker td .ui-state-active{
+	background:none;
+	outline:1px solid #ee1621;
+	color:#ee1621;
+}
+.skin-ingenieria .btn-default{
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e7e7e7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7e7e7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e7e7e7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+	color:#b93e42;
+	border:1px solid #b1b1b1;
+}
+.skin-gym .btn-default:hover,
+.skin-gym .btn-default.active,
+.skin-ingenieria .open .btn-default{
+	background: transparent;
+	/*background: #e7e7e7;
+	background: -moz-linear-gradient(top,  #e7e7e7 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e7e7e7), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%);
+	background: -o-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%);
+	background: linear-gradient(to bottom,  #e7e7e7 0%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#ffffff',GradientType=0 );*/
+}
+.skin-ingenieria .btn-primary{
+	background: #ef413b; /* Old browsers */
+	background: -moz-linear-gradient(top, #ef413b 0%, #993333 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ef413b), color-stop(100%,#993333)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ef413b 0%,#993333 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ef413b 0%,#993333 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ef413b 0%,#993333 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ef413b 0%,#993333 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef413b', endColorstr='#993333',GradientType=0 ); /* IE6-9 */
+	color:#FFF;
+	border:1px solid #993333;
+}
+.skin-ingenieria .btn-primary:hover,
+.skin-ingenieria .open .btn-primary{
+	background: #993333;
+	color:#f7f7f7;
+	border:1px solid #a22e31;
+}
+
+.skin-ingenieria .btn-primary:active,
+.skin-ingenieria .btn-primary.active{
+	background: #993333; /* Old browsers */
+	background: -moz-linear-gradient(top,  #993333 0%, #ef413b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#993333), color-stop(100%,#ef413b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #993333 0%,#ef413b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #993333 0%,#ef413b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #993333 0%,#ef413b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #993333 0%,#ef413b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#993333', endColorstr='#ef413b',GradientType=0 ); /* IE6-9 */
+}
+
+.skin-ingenieria .btn-primary:active{
+	color:#f7f7f7;
+}
+.skin-ingenieria .comp-btn-notification .title,
+.skin-ingenieria .wrap-pagination .pagination-ui li:hover a,
+.skin-ingenieria .wrap-pagination .pagination-ui li.active a,
+.skin-ingenieria .wrap-pagination .arrow:hover,
+.skin-ingenieria .wrap-pagination .arrow.active{
+	color:#ee1621;
+}
+
+.skin-ingenieria li.token-input-selected-token-facebook {
+	background-color: #F7E2E2;
+	border: 1px solid #d59698;
+}
+
+.skin-ingenieria li.token-input-selected-token-facebook p {
+	color: #BB3F43;
+}
+
+.skin-ingenieria li.token-input-selected-token-facebook .token-input-delete-token-facebook {
+	color: #BB3F43;
+}
+
+.skin-ingenieria .jstree-default .jstree-clicked {
+	background: #F7E2E2;
+	border-radius: 2px;
+	box-shadow: inset 0 0 1px #d59698;
+	color: #BB3F43;
+}
+
+.skin-ingenieria  .totalattach {
+	background: #b93e42;
+}
+
+/******************************
+/*----INFRAESTRUCTURA*/
+/*******************************/
+.skin-infraestructura .logo img{
+	background:url('../images/system/empresas.png') no-repeat -1px -125px;
+	width:89px;
+	height:28px;
+}
+.skin-infraestructura .main-nav .menu-dropdown.active:before,
+.skin-infraestructura .comp-btn-notification.btn-group.open .btn:before, 
+.skin-infraestructura .comp-btn-notification .btn:hover:before, 
+.skin-infraestructura .comp-btn-user.btn-group.open .btn:before, 
+.skin-infraestructura .comp-btn-user .btn:hover:before,
+.skin-infraestructura .nav-tabs > li.active > a:before,
+.skin-infraestructura .nav-tabs > li:hover.active > a:before,
+.skin-infraestructura .ui-datepicker td .ui-state-hover{
+	background:#5e6b74;
+}
+.skin-infraestructura .modal-content,
+.skin-infraestructura .form-login{
+	border-top:3px solid #5e6b74;
+}
+.skin-infraestructura .ui-datepicker td .ui-state-active{
+	background:none;
+	outline:1px solid #5e6b74;
+	color:#5e6b74;
+}
+.skin-infraestructura .btn-default{
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e7e7e7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7e7e7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e7e7e7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+	color:#616b76;
+	border:1px solid #b1b1b1;
+}
+.skin-infraestructura .btn-default:hover,
+.skin-infraestructura .btn-default.active,
+.skin-infraestructura .open .btn-default{
+	background: #e7e7e7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e7e7e7 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e7e7e7), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e7e7e7 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.skin-infraestructura .btn-primary{
+	background: #636e79; /* Old browsers */
+	background: -moz-linear-gradient(top,  #636e79 0%, #545d67 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#636e79), color-stop(100%,#545d67)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #636e79 0%,#545d67 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #636e79 0%,#545d67 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #636e79 0%,#545d67 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #636e79 0%,#545d67 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636e79', endColorstr='#545d67',GradientType=0 ); /* IE6-9 */
+	color:#f1f8ff;
+	border:1px solid #505357;
+}
+.skin-infraestructura .btn-primary:hover,
+.skin-infraestructura .btn-primary:active,
+.skin-infraestructura .btn-primary.active,
+.skin-infraestructura .open .btn-primary{
+	background: #545d67; /* Old browsers */
+	background: -moz-linear-gradient(top,  #545d67 0%, #636e79 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#545d67), color-stop(100%,#636e79)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #545d67 0%,#636e79 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #545d67 0%,#636e79 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #545d67 0%,#636e79 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #545d67 0%,#636e79 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545d67', endColorstr='#636e79',GradientType=0 ); /* IE6-9 */
+	color:#d8e6f3;
+	border:1px solid #505357;
+}
+
+.skin-infraestructura .comp-btn-notification .title,
+.skin-infraestructura .wrap-pagination .pagination-ui li:hover a,
+.skin-infraestructura .wrap-pagination .pagination-ui li.active a,
+.skin-infraestructura .wrap-pagination .arrow:hover,
+.skin-infraestructura .wrap-pagination .arrow.active{
+	color:#5e6b74;
+}
+
+.skin-infraestructura li.token-input-selected-token-facebook {
+	background-color: #E4E6E8;
+	border: 1px solid #A19F9F;
+}
+
+.skin-infraestructura li.token-input-selected-token-facebook p {
+	color: #423C3C;
+}
+
+.skin-infraestructura li.token-input-selected-token-facebook .token-input-delete-token-facebook {
+	color: #5C5858;
+}
+
+.skin-infraestructura .jstree-default .jstree-clicked {
+	background: #E4E6E8;
+	border-radius: 2px;
+	box-shadow: inset 0 0 1px #A19F9F;
+	color: #423C3C;
+}
+
+.skin-infraestructura  .totalattach {
+	background: #616b76;
+}
+
+/******************************
+/*----VIVA*/
+/*******************************/
+.skin-inmobiliaria .logo img{
+	background:url('../images/system/empresas.png') no-repeat -1px -94px;
+	width:82px;
+	height:28px;
+}
+.skin-inmobiliaria .main-nav .menu-dropdown.active:before,
+.skin-inmobiliaria .comp-btn-notification.btn-group.open .btn:before, 
+.skin-inmobiliaria .comp-btn-notification .btn:hover:before, 
+.skin-inmobiliaria .comp-btn-user.btn-group.open .btn:before, 
+.skin-inmobiliaria .comp-btn-user .btn:hover:before,
+.skin-inmobiliaria .nav-tabs > li.active > a:before,
+.skin-inmobiliaria .nav-tabs > li:hover.active > a:before,
+.skin-inmobiliaria .ui-datepicker td .ui-state-hover{
+	background:#659a3a;
+}
+.skin-inmobiliaria .modal-content,
+.skin-inmobiliaria .form-login{
+	border-top:3px solid #659a3a;
+}
+.skin-inmobiliaria .ui-datepicker td .ui-state-active{
+	background:none;
+	outline:1px solid #659a3a;
+	color:#659a3a;
+}
+.skin-inmobiliaria .btn-default{
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e7e7e7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7e7e7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#e7e7e7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+	color:#85b746;
+	border:1px solid #b1b1b1;
+}
+.skin-inmobiliaria .btn-default:hover,
+.skin-inmobiliaria .btn-default.active,
+.skin-inmobiliaria .open .btn-default{
+	background: #e7e7e7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e7e7e7 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e7e7e7), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e7e7e7 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e7e7e7 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.skin-inmobiliaria .btn-primary{
+	background: #679e3c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #679e3c 0%, #5d9033 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#679e3c), color-stop(99%,#5d9033)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #679e3c 0%,#5d9033 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #679e3c 0%,#5d9033 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #679e3c 0%,#5d9033 99%); /* IE10+ */
+	background: linear-gradient(to bottom,  #679e3c 0%,#5d9033 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#679e3c', endColorstr='#5d9033',GradientType=0 ); /* IE6-9 */
+	color:#e8e8e8;
+	border:1px solid #b1b1b1;
+}
+.skin-inmobiliaria .btn-primary:hover,
+.skin-inmobiliaria .btn-primary:active,
+.skin-inmobiliaria .btn-primary.active,
+.skin-inmobiliaria .open .btn-primary{
+	background: #5d9033; /* Old browsers */
+	background: -moz-linear-gradient(top,  #5d9033 0%, #679e3c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5d9033), color-stop(100%,#679e3c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5d9033 0%,#679e3c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5d9033 0%,#679e3c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5d9033 0%,#679e3c 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #5d9033 0%,#679e3c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d9033', endColorstr='#679e3c',GradientType=0 ); /* IE6-9 */	
+	color:#f7f7f7;
+	border:1px solid #4a7527;
+}
+
+.skin-inmobiliaria .comp-btn-notification .title,
+.skin-inmobiliaria .wrap-pagination .pagination-ui li:hover a,
+.skin-inmobiliaria .wrap-pagination .pagination-ui li.active a,
+.skin-inmobiliaria .wrap-pagination .arrow:hover,
+.skin-inmobiliaria .wrap-pagination .arrow.active{
+	color:#659a3a;
+}
+
+.skin-inmobiliaria li.token-input-selected-token-facebook {
+	background-color: #E0ECD6;
+	border: 1px solid #9bb18a;
+}
+
+.skin-inmobiliaria li.token-input-selected-token-facebook p {
+	color: #639839;
+}
+
+.skin-inmobiliaria li.token-input-selected-token-facebook .token-input-delete-token-facebook {
+	color: #4F7432;
+}
+
+.skin-inmobiliaria .jstree-default .jstree-clicked {
+	background: #E0ECD6;
+	border-radius: 2px;
+	box-shadow: inset 0 0 1px #9bb18a;
+	color: #639839;
+}
+
+.skin-inmobiliaria  .totalattach {
+	background: #85b746;
+}
+
+/*********************
+* PROGRESS BAR %     *
+*********************/
+
+.progress-porcentaje {
+	position: relative;
+}
+
+.progress-porcentaje .progress{
+	margin-left: 34px;
+}
+
+.progress-porcentaje span {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	padding: 0px;
+}
+

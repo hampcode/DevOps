@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="VisorSystemSuite" parallel="tests">
+	
+	<test name="CategoriaWebDriverTestChrome" enabled="true" >
+		<!-- INICIO	: El ID y Nombre del Navegador sale del Testlink para poder integrarlo -->
+		<parameter name="testlinkNavegadorId" value="2"/>
+		<parameter name="testlinkNavegadorNombre" value="Chrome"/>
+		<!-- FIN	: El ID y Nombre del Navegador sale del Testlink para poder integrarlo -->
+		<parameter name="navegador" value="chrome"/>
+		<parameter name="remoto" value="0"/>
+		<parameter name="fuenteDatos" value="Excel"/>
+		<parameter name="rutaArchivo" value="${chrome.rutaArchivo}"/>
+		<classes>
+			<class name="pe.com.test.system.testCase.MantenimientoCategoria" />
+		</classes>
+	</test>
+	
+	<test name="CategoriaWebDriverTestFirefox" enabled="true">
+		<!-- INICIO	: El ID y Nombre del Navegador sale del Testlink para poder integrarlo -->
+		<parameter name="testlinkNavegadorId" value="3"/>
+		<parameter name="testlinkNavegadorNombre" value="Firefox"/>
+		<!-- FIN	: El ID y Nombre del Navegador sale del Testlink para poder integrarlo -->
+		<parameter name="navegador" value="firefox"/>
+		<parameter name="remoto" value="0"/>
+		<parameter name="fuenteDatos" value="Excel"/>
+		<parameter name="rutaArchivo" value="${firefox.rutaArchivo}"/>
+		<classes>
+			<class name="pe.com.test.system.testCase.MantenimientoCategoria" />
+		</classes>
+	</test>
+	
+</suite> 

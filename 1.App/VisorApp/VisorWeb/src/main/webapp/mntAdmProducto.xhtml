@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets" template="template.xhtml">
+	<ui:define name="body">
+		<div class="main-colum">
+			<!-- wrap -->
+			<div class="box-wrap-main">
+				<div class="box-wrap-header">
+					<div class="pull-left">
+						<div class="title-main">#{m['mntAdmProducto.cabecera']}</div>
+					</div>
+				</div>
+				<div class="box-form">
+					<h:form prependId="false" id="frmIndex">
+			            <h:inputHidden value="#{productoController.inicioMantenimiento}" />
+						<br />
+						<h:panelGrid columns="6">
+			            	<h:outputLabel value="#{m['template.filtro']}: " />
+			            	<h:outputLabel value="&#160;" />
+			                <p:inputText id="txtFiltro" value="#{productoController.filtro}" label="#{productoController.filtro}" style="width: 500px" class="form-control" />
+			                <p:watermark for="txtFiltro" value="#{m['mntAdmProducto.filtro']}" />
+			                <h:outputLabel value="&#160;" />
+			                <p:commandButton id="btnFiltrar" actionListener="#{productoController.buscar}" value="#{m['template.filtrar']}" update="tablaProductos" class="btn-s btn-search"/>
+						</h:panelGrid>
+						<br />
+						<p:dataTable id="tablaProductos" var="i"
+			                             value="#{productoController.listaProducto}"
+			                             rowKey="#{i.idProducto}"
+			                             selection="#{productoController.productoSeleccionado}"
+			                             selectionMode="single" rows="50" paginator="true"
+			                             paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} "
+			                             emptyMessage="#{m['template.noRegistros']}"
+			                             rowsPerPageTemplate="5,10,15" >
+			                    <f:facet name="header">  
+			                        #{m['mntAdmProducto.lista']}
+			                    </f:facet>
+			                    <p:column headerText="#{m['mntAdmProducto.codigo']}">  
+			                        #{i.idProducto}  
+			                    </p:column>
+			                    <p:column headerText="#{m['mntAdmProducto.nombre']}">  
+			                        #{i.nombre}  
+			                    </p:column>
+			            </p:dataTable>
+						<br />
+			            <center>
+			                    <h:panelGrid columns="3"  >
+			                        <p:commandButton id="btnNuevo" value="#{m['template.nuevo']}" action="#{productoController.irNuevo}" ajax="false" style="width: 150px" class="btn-s btn-search" />
+			                        <p:commandButton id="btnActualizar" value="#{m['template.editar']}" action="#{productoController.irActualizar}" ajax="false" style="width: 150px" class="btn-s btn-add" />
+			                        <p:commandButton id="btnEliminar" value="#{m['template.eliminar']}" actionListener="#{productoController.eliminar}" ajax="true" style="width: 150px" update="tablaProductos,messages"  class="btn-s btn-clean">
+			                            <p:confirm header="#{m['mntAdmProducto.eliminar']}" message="#{m['mntAdmProducto.eliminarConfirmacion']}" icon="ui-icon-alert" />
+			                        </p:commandButton>  
+			                    </h:panelGrid>
+						</center>
+			            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade" id="frmConfirmacion">
+			                    <p:commandButton value="#{m['template.si']}" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" id="btnSi" />
+			                    <p:commandButton value="#{m['template.no']}" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" id="btnNo" />
+			                </p:confirmDialog>
+			            <p:messages id="messages" showDetail="false" autoUpdate="true"/>
+			        </h:form>
+				</div>
+			</div>
+		</div>
+	</ui:define>
+</ui:composition>
+
