@@ -73,7 +73,7 @@ Debes de ubicarte en la ruta \1.App\VisorApp\VisorCore y ejecutar los siguientes
 Debes de ubicarte en la ruta \3.Test\1.PruebasFuncionales\VisorTest y ejecutar los siguientes comandos:
 
 ```
-mvn test -Dchrome.rutaArchivo='C:\Users\Henry Wong\RegistrarCategoriaData.xlsx'' -Dfirefox.rutaArchivo='C:\Users\Henry Wong\RegistrarCategoriaData.xlsx'
+mvn test -Dchrome.rutaArchivo='C:\Users\Hamp\RegistrarCategoriaData.xlsx'' -Dfirefox.rutaArchivo='C:\Users\Hamp\RegistrarCategoriaData.xlsx'
 ```
 
 ### Y las pruebas de estilo de codificación ⌨️
