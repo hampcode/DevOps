@@ -65,7 +65,7 @@ public class MantenimientoCategoria {
 			this.categoriaPage.hacerClicBotonNuevo();
 			this.categoriaPage.escribirCampoNombre("");
 			String valorObtenido = categoriaPage.hacerClicBotonGuardar();
-			Assert.assertEquals(valorObtenido, "Nombre: Error de validación: se necesita un valor.");
+			Assert.assertEquals(valorObtenido, "Nombre: Validation Error: Value is required.");
 			
 		} catch (AssertionError e) {
 			
