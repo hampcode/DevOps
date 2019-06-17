@@ -16,13 +16,15 @@ public final class VisorDriver {
 			switch (navegador) {
 			case "firefox":
 				
-				System.setProperty("webdriver.gecko.driver", "C:\\Users\\Hamp\\Documents\\DE\\driver\\geckodriver.exe");
+				//System.setProperty("webdriver.gecko.driver", "C:\\Users\\Hamp\\Documents\\DE\\driver\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "/Users/hamp/Documents/DE/driver//geckodriver");
 				webDriver = new FirefoxDriver();
 
 				break;
 			case "chrome":
 
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\Hamp\\Documents\\DE\\driver\\chromedriver.exe");
+				//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Hamp\\Documents\\DE\\driver\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "/Users/hamp/Documents/DE/driver//chromedriver");
 				webDriver = new ChromeDriver();
 
 				break;
