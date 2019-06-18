@@ -16,7 +16,7 @@ public final class VisorDriver {
 			switch (navegador) {
 			case "firefox":
 				
-				System.setProperty("webdriver.gecko.driver", "C:\\Users\\Hamp\\Documents\\DE\\driver\\geckodriver.exe");
+				//System.setProperty("webdriver.gecko.driver", "C:\\Users\\Hamp\\Documents\\DE\\driver\\geckodriver.exe");
 				webDriver = new FirefoxDriver();
 
 				break;
